@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Land Suitability & Livability Map – NWP</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <h1>Land Suitability & Livability – North Western Province</h1>
+
+  <div id="map"></div>
+
+  <form id="dataForm">
+    <label>Issue Type:
+      <select name="issue">
+        <option value="water">Water Scarcity</option>
+        <option value="elephant">Human-Elephant Conflict</option>
+        <option value="sprawl">Urban Sprawl</option>
+      </select>
+    </label>
+    <label>Description:
+      <input type="text" name="description" required />
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
